@@ -1,0 +1,798 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  transition: 0.3s;
+}
+/*  */ /*  */
+/*  */ /*  */
+.Btn {
+  padding: 10px 15px;
+  background-color: white;
+  font-size: 16px;
+  border: 2px solid rgb(219, 219, 219);
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(214, 214, 214);
+  color: black;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.Btn:hover {
+  box-shadow: 0 0 5px rgb(194, 194, 194);
+}
+.Btn:focus {
+  box-shadow: 0 0 5px rgb(94, 94, 94);
+}
+/*  */ /*  */
+.BtnBlue {
+  border: 2px solid rgb(29, 29, 255);
+  padding: 10px 15px;
+  background-color: rgb(29, 29, 255);
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(66, 66, 255);
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.BtnBlue:hover {
+  box-shadow: 0 0 7px rgb(56, 56, 255);
+}
+.BtnBlue:focus {
+  border: 2px solid blue;
+  box-shadow: 0 0 9px rgb(13, 13, 255);
+}
+/*  */ /*  */
+.BtnPurple {
+  border: 2px solid rgb(156, 0, 156);
+  padding: 10px 15px;
+  background-color: rgb(177, 0, 177);
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(218, 0, 218);
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.BtnPurple:hover {
+  box-shadow: 0 0 7px rgb(168, 0, 168);
+}
+.BtnPurple:focus {
+  border: 2px solid purple;
+  box-shadow: 0 0 7px purple;
+}
+/*  */ /*  */
+.BtnGreen {
+  border: 2px solid rgb(0, 145, 0);
+  padding: 10px 15px;
+  background-color: rgb(0, 156, 0);
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px green;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.BtnGreen:hover {
+  box-shadow: 0 0 7px rgb(0, 207, 0);
+}
+.BtnGreen:focus {
+  border: 2px solid green;
+  box-shadow: 0 0 7px green;
+}
+/*  */ /*  */
+.BtnRed {
+  border: 2px solid rgb(221, 17, 17);
+  padding: 10px 15px;
+  background-color: rgb(180, 79, 79);
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px red;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.BtnRed:hover {
+  box-shadow: 0 0 7px red;
+}
+.BtnRed:focus {
+  border: 2px solid red;
+  box-shadow: 0 0 7px red;
+}
+/*  */ /*  */
+.BtnAqua {
+  border: 2px solid rgb(8, 207, 207);
+  padding: 10px 15px;
+  background-color: rgb(0, 233, 233);
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px aqua;
+  color: black;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.BtnAqua:hover {
+  box-shadow: 0 0 5px rgb(0, 145, 145);
+}
+.BtnAqua:focus {
+  border: 2px solid rgb(2, 184, 184);
+  box-shadow: 0 0 7px aqua;
+}
+/*  */ /*  */
+.AnimatedBtnPurple {
+  display: block;
+  border: 1px solid purple;
+  background: white;
+  outline: none;
+  z-index: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+  box-shadow: 0 0 5px blueviolet;
+}
+.AnimatedBtnPurple:hover {
+  color: white;
+  box-shadow: 0 0 7px blueviolet;
+}
+.AnimatedBtnPurple::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: rgb(182, 8, 182);
+  border-radius: 0px 0px 50% 50%;
+  color: white;
+  z-index: 0;
+  transition: all 0.7s;
+}
+.AnimatedBtnPurple:hover::after {
+  height: 200%;
+  z-index: 0;
+  color: white;
+}
+.AnimatedBtnPurple span {
+  position: relative;
+  z-index: 1;
+}
+/*  */ /*  */
+.AnimatedBtnPurple2 {
+  display: block;
+  border: 1px solid purple;
+  background: white;
+  outline: none;
+  z-index: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+  box-shadow: 0 0 5px blueviolet;
+}
+.AnimatedBtnPurple2:hover {
+  color: white;
+  box-shadow: 0 0 7px blueviolet;
+}
+.AnimatedBtnPurple2::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: rgb(182, 8, 182);
+  border-radius: 50% 50% 0px 0px;
+  color: white;
+  z-index: 0;
+  transition: all 0.7s;
+}
+.AnimatedBtnPurple2:hover::after {
+  height: 200%;
+  z-index: 0;
+  color: white;
+}
+.AnimatedBtnPurple2 span {
+  position: relative;
+  z-index: 1;
+}
+/*  */ /*  */
+.AnimatedBtnBlue {
+  display: block;
+  border: 1px solid blue;
+  background: white;
+  outline: none;
+  z-index: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+  box-shadow: 0 0 5px blue;
+}
+.AnimatedBtnBlue:hover {
+  color: white;
+  box-shadow: 0 0 7px blue;
+}
+.AnimatedBtnBlue::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: rgb(32, 32, 255);
+  border-radius: 0px 0px 50% 50%;
+  color: white;
+  z-index: 0;
+  transition: all 0.7s;
+}
+.AnimatedBtnBlue:hover::after {
+  height: 200%;
+  z-index: 0;
+  color: white;
+}
+.AnimatedBtnBlue span {
+  position: relative;
+  z-index: 1;
+}
+/*  */ /*  */
+.AnimatedBtnBlue2 {
+  display: block;
+  border: 1px solid blue;
+  background: white;
+  outline: none;
+  z-index: 0;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+  box-shadow: 0 0 5px blue;
+}
+.AnimatedBtnBlue2:hover {
+  color: white;
+  box-shadow: 0 0 7px blue;
+}
+.AnimatedBtnBlue2::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  background-color: rgb(32, 32, 255);
+  border-radius: 50% 50% 0px 0px;
+  color: white;
+  z-index: 0;
+  transition: all 0.7s;
+}
+.AnimatedBtnBlue2:hover::after {
+  height: 200%;
+  z-index: 0;
+  color: white;
+}
+.AnimatedBtnBlue2 span {
+  position: relative;
+  z-index: 1;
+}
+/*  */ /*  */
+/*  */ /*  */
+.AnimatedInput {
+  position: relative;
+  box-shadow: 0 0 5px blueviolet;
+  border-radius: 5px;
+  width: max-content;
+}
+.AnimatedInput input {
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid purple;
+  background: white;
+  color: black;
+  outline: none;
+}
+.AnimatedInput label {
+  position: absolute;
+  font-family: sans-serif;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: rgb(105, 105, 105);
+  font-size: 19px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.AnimatedInput input:focus {
+  border: 1px solid purple;
+}
+.AnimatedInput input:focus ~ label,
+.AnimatedInput input:valid ~ label {
+  top: 0;
+  left: 12px;
+  font-size: 16px;
+  padding: 0 5px;
+  background: white;
+  color: purple;
+}
+/*  */ /*  */
+.Input {
+  padding: 9px 11px;
+  border-radius: 5px;
+  border: 2px solid rgb(185, 185, 185);
+  box-shadow: 0 0 5px rgb(194, 194, 194);
+  font-size: 18px;
+  outline: none;
+  color: black;
+  letter-spacing: 1px;
+}
+.Input:hover {
+  border: 2px solid rgb(175, 162, 162);
+  box-shadow: 0 0 5px rgb(179, 179, 179);
+}
+.Input:focus {
+  border: 2px solid rgb(211, 211, 211);
+  box-shadow: 0 0 5px blue;
+}
+/*  */ /*  */
+.InputBlack {
+  padding: 9px 11px;
+  border-radius: 5px;
+  border: 2px solid rgb(112, 99, 99);
+  font-size: 18px;
+  outline: none;
+  background-color: black;
+  color: rgb(245, 245, 245);
+  letter-spacing: 1px;
+}
+.InputBlack:hover {
+  border: 2px solid rgb(46, 39, 39);
+  box-shadow: 0 0 5px black;
+}
+.InputBlack:focus {
+  border: 2px solid rgb(85, 71, 71);
+  box-shadow: 0 0 5px black;
+}
+/*  */ /*  */
+/*  */ /*  */
+.Radio-group {
+  display: flex;
+  flex-direction: column;
+}
+.Radio-group .Radio {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+  margin: 7px;
+  letter-spacing: 1px;
+}
+.Radio-group .Radio input[type="radio"] {
+  display: none;
+}
+.Radio-group .Radio span {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid purple;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.Radio-group .Radio input[type="radio"]:checked ~ span {
+  box-shadow: 0 0 5px blueviolet;
+}
+
+.Radio-group .Radio span::after {
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: purple;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: 300ms ease-in-out 0s;
+}
+.Radio-group .Radio input[type="radio"]:checked ~ span:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+/*  */ /*  */
+/*  */ /*  */
+.RadioPurple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 5px;
+}
+.RadioPurple .RadioItem [type="radio"] {
+  display: none;
+}
+.RadioPurple .RadioItem {
+  margin-left: 15px;
+}
+.RadioPurple .RadioItem + .RadioItem {
+  margin-top: 15px;
+}
+.RadioPurple .RadioItem label {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  background-color: rgb(146, 62, 224);
+  border: 2px solid purple;
+  color: white;
+  font-size: 17px;
+  box-shadow: 0 0 5px purple;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out 0s;
+}
+.RadioPurple .RadioItem label::after,
+.RadioPurple .RadioItem label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.RadioPurple .RadioItem label::after {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  left: 11px;
+  top: 13px;
+}
+.RadioPurple .RadioItem label::before {
+  background-color: rgb(245, 245, 245);
+  height: 12px;
+  width: 12px;
+  left: 17px;
+  top: 19px;
+  transform: scale(3);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out 0s;
+}
+.RadioPurple .RadioItem [type="radio"]:checked ~ label {
+  border-color: rgb(105, 7, 105);
+  box-shadow: 0 0 10px rgb(132, 0, 255);
+}
+.RadioPurple .RadioItem [type="radio"]:checked ~ label::before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+/*  */ /*  */
+.RadioWhite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 5px;
+}
+.RadioWhite .RadioItem [type="radio"] {
+  display: none;
+}
+.RadioWhite .RadioItem {
+  margin-left: 15px;
+}
+.RadioWhite .RadioItem + .RadioItem {
+  margin-top: 15px;
+}
+.RadioWhite .RadioItem label {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  background-color: white;
+  border: 2px solid rgb(209, 209, 209);
+  color: black;
+  font-size: 17px;
+  box-shadow: 0 0 5px rgb(192, 192, 192);
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  transition: 0.4s ease-in-out 0s;
+}
+.RadioWhite .RadioItem label::after,
+.RadioWhite .RadioItem label::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.RadioWhite .RadioItem label::after {
+  width: 20px;
+  height: 20px;
+  border: 2px solid purple;
+  left: 11px;
+  top: 13px;
+}
+.RadioWhite .RadioItem label::before {
+  background-color: blueviolet;
+  height: 12px;
+  width: 12px;
+  left: 17px;
+  top: 19px;
+  transform: scale(3);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out 0s;
+}
+.RadioWhite .RadioItem [type="radio"]:checked ~ label {
+  border-color: blueviolet;
+  box-shadow: 0 0 10px rgb(165, 165, 165);
+}
+.RadioWhite .RadioItem [type="radio"]:checked ~ label::before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+/*  */ /*  */
+/*  */ /*  */
+.Switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+}
+.Switch span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(190, 188, 188);
+  transition: 0.4s;
+  border-radius: 34px;
+  border: 1px solid blueviolet;
+  box-shadow: 0 0 5px purple;
+}
+.Switch input {
+  display: none;
+}
+.Switch span::before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 35px;
+  left: 5px;
+  top: 4px;
+  bottom: 5px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 300px;
+}
+.Switch input:checked ~ span {
+  background-color: #ff278c;
+  border: 1px solid #ff278c;
+}
+.Switch input:checked ~ span::before {
+  transform: translateX(32px);
+}
+/*  */ /*  */
+/*  */ /*  */
+.MenuToggle {
+  position: relative;
+  width: 55px;
+  height: 45px;
+  background-color: white;
+  box-shadow: 0 0 15px rgb(211, 211, 211);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.MenuToggle:hover {
+  background-color: rgb(250, 250, 250);
+}
+.MenuToggle span {
+  position: absolute;
+  width: 36px;
+  height: 1px;
+  background-color: rgb(9, 9, 9);
+  transition: 0.5s;
+}
+.MenuToggle span:nth-child(1) {
+  transform: translateY(-8px);
+}
+.MenuToggle span:nth-child(2) {
+  height: 2px;
+}
+.MenuToggle span:nth-child(3) {
+  transform: translateY(9px);
+}
+/*  */ /*  */
+.MenuTogglePurple {
+  position: relative;
+  width: 55px;
+  height: 45px;
+  background-color: rgb(204, 21, 204);
+  box-shadow: 0 0 10px blueviolet;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7px;
+  cursor: pointer;
+}
+.MenuTogglePurple:hover {
+  background-color: rgb(189, 18, 183);
+}
+.MenuTogglePurple span {
+  position: absolute;
+  width: 36px;
+  height: 1px;
+  background-color: white;
+  transform: 0.5s;
+}
+.MenuTogglePurple span:nth-child(1) {
+  transform: translateY(-8px);
+}
+.MenuTogglePurple span:nth-child(2) {
+  height: 2px;
+}
+.MenuTogglePurple span:nth-child(3) {
+  transform: translateY(9px);
+}
+/*  */ /*  */
+.MenuToggleBlue {
+  position: relative;
+  width: 55px;
+  height: 45px;
+  background-color: rgb(37, 37, 255);
+  box-shadow: 0 0 10px blue;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7px;
+  cursor: pointer;
+}
+.MenuToggleBlue:hover {
+  background-color: rgb(61, 61, 255);
+}
+.MenuToggleBlue span {
+  position: absolute;
+  width: 36px;
+  height: 1px;
+  background-color: white;
+  transform: 0.5s;
+}
+.MenuToggleBlue span:nth-child(1) {
+  transform: translateY(-8px);
+}
+.MenuToggleBlue span:nth-child(2) {
+  height: 2px;
+}
+.MenuToggleBlue span:nth-child(3) {
+  transform: translateY(9px);
+}
+/*  */ /*  */
+/*  */ /*  */
+.Checkbox {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  width: max-content;
+  letter-spacing: 1px;
+}
+.Checkbox input {
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  letter-spacing: 0px;
+  position: relative;
+  top: 5px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  transition: all 0.15s ease-out 0s;
+  background-color: whitesmoke;
+  border: 1px solid blueviolet;
+  color: purple;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+  border-radius: 3px;
+  box-shadow: 0 0 3px purple;
+}
+.Checkbox input:checked {
+  box-shadow: 0 0 5px blueviolet;
+  background-color: blueviolet;
+  color: white;
+}
+.Checkbox input:checked::after {
+  animation: CheckboxAnimation 0.7s;
+  background-color: purple;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.Checkbox input:checked::before {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  content: "✓";
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -2px;
+  margin-left: -1px;
+}
+@keyframes CheckboxAnimation {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.3;
+    position: relative;
+    margin-left: -11px;
+    margin-top: -11px;
+    border-radius: 50%;
+  }
+  100% {
+    height: 40px;
+    width: 40px;
+    margin-left: -11px;
+    margin-top: -11px;
+    opacity: 0;
+  }
+}
+/*  */ /*  */
+/*  */ /*  */
+.Select {
+  width: max-content;
+  position: relative;
+}
+.Select select {
+  padding: 6px 12px;
+  border: 1px solid blueviolet;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 2px;
+  box-shadow: 0 0 3px blue;
+  background-color: white;
+  color: black;
+}
+.Select select option {
+  background-color: white;
+  color: black;
+}
+.Select select:focus {
+  border: 1px solid purple;
+  border-radius: 3px;
+  box-shadow: 0 0 3px purple;
+}

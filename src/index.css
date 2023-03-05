@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+/* ::-webkit-file-upload-button {
+  display: none;
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.active {
+  box-shadow: 0 0 5px purple;
+}
+/* .error {
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  width: max-content;
+  border-radius: 5px;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  background-color: rgb(255, 177, 177);
+} */
+.message {
+  width: 330px;
+  background-color: rgba(130, 2, 161, 0.2);
+  padding: 10px;
+  margin: 0 10px 0 20px;
+  border-radius: 7px;
+  border: 1px solid purple;
+  border-left: 5px solid purple;
+  border-right: 5px solid purple;
+}
+.message p {
+  font-size: 17px;
+  color: purple;
+}
+.error {
+  width: 330px;
+  background-color: rgb(255, 177, 177);
+  padding: 10px;
+  margin: 0 10px 0 20px;
+  border-radius: 7px;
+  border: 1px solid red;
+  border-left: 5px solid red;
+  border-right: 5px solid red;
+}
+.error p {
+  font-size: 17px;
+  color: red;
+}

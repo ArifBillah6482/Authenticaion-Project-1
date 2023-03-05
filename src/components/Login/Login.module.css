@@ -1,0 +1,64 @@
+.LoginMainDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 3px;
+}
+.Form {
+  background-color: white;
+  box-shadow: 0 0 5px purple;
+  padding: 20px 15px;
+  border-radius: 7px;
+  flex-basis: 400px;
+  height: max-content;
+  border-top: 7px solid rgb(175, 2, 175);
+  border-bottom: 7px solid rgb(175, 2, 175);
+}
+.formTitle {
+  font-size: 35px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: purple;
+  text-align: center;
+  margin-bottom: 15px;
+  font-style: italic;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.LoginInput {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.inputLogo {
+  font-size: 35px;
+  color: purple;
+}
+.AnimatedInput {
+  width: 100%;
+  margin-left: 20px;
+}
+.input {
+  width: 100%;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.checkbox p {
+  margin-top: 5px;
+  color: rgb(141, 8, 134);
+  font-style: italic;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px 10px 10px;
+}
+.btns input:nth-child(1) {
+  margin-left: 10px;
+  padding: 12px 30px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
