@@ -25,6 +25,7 @@
 }
 /*  */ /*  */
 .BtnBlue {
+  outline: none;
   border: 2px solid rgb(29, 29, 255);
   padding: 10px 15px;
   background-color: rgb(29, 29, 255);
@@ -44,6 +45,7 @@
 }
 /*  */ /*  */
 .BtnPurple {
+  outline: none;
   border: 2px solid rgb(156, 0, 156);
   padding: 10px 15px;
   background-color: rgb(177, 0, 177);
