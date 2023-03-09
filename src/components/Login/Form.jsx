@@ -101,14 +101,28 @@ function Form() {
       </div>
 
       {message && (
-        <div className="message">
-          <p>{message}</p>
+        <div
+          style={{
+            width: "100%",
+            textAlign: "center",
+          }}
+        >
+          <div className="message">
+            <p>{message}</p>
+          </div>
         </div>
       )}
 
       {error && (
-        <div className="error">
-          <p>{error}</p>
+        <div
+          style={{
+            width: "100%",
+            textAlign: "center",
+          }}
+        >
+          <div className="error">
+            <p>{error}</p>
+          </div>
         </div>
       )}
 
