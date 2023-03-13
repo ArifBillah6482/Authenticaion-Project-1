@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import s from "./Login.module.css";
 
 const inputValues = {
@@ -12,6 +13,7 @@ function Form() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
+  const navigate = useNavigate();
   const handleValue = (e) => {
     set_values({ ...values, [e.target.name]: e.target.value });
   };
@@ -21,7 +23,7 @@ function Form() {
     setLoading(true);
     setMessage("");
     setError("");
-    ///all
+    //
     fetch("http://localhost:4000/login", {
       method: "POST",
       headers: {
@@ -34,10 +36,17 @@ function Form() {
     })
       .then((res) => res.json())
       .then((res) => {
+        setLoading(false);
         if (!res.err && res.success) {
           if (res.msg) {
             setMessage(res.msg);
           }
+          navigate("/profile", {
+            state: {
+              _id: res.user._id,
+              username: res.user.username,
+            },
+          });
           console.log(res);
         } else {
           if (res.err) {

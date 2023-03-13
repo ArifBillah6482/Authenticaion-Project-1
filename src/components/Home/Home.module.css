@@ -1,0 +1,67 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.title {
+  margin: 20px 5px;
+  overflow: hidden;
+  border-radius: 7px;
+  box-shadow: 0 0 5px blueviolet;
+  font-size: 25px;
+  font-family: monospace;
+  padding: 20px;
+  border: 1px solid rgb(177, 174, 174);
+  color: purple;
+  user-select: none;
+  cursor: pointer;
+}
+.title:hover {
+  transform: scale(0.9);
+}
+/*  */
+.dev {
+  padding: 10px 20px;
+  border: 1px solid rgb(148, 89, 148);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.dev p {
+  margin-right: 7px;
+  font-family: consolas;
+  color: purple;
+  font-size: 18px;
+}
+.dev a {
+  padding: 6px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgb(141, 73, 141);
+  border: 1px solid rgb(196, 83, 196);
+  color: rgb(165, 2, 165);
+  font-size: 20px;
+  text-decoration: none;
+  /* letter-spacing: 1px; */
+  animation-name: name;
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  font-family: consolas;
+  cursor: pointer;
+}
+/*  */
+@keyframes name {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*  */
+@media only screen and (max-width: 450px) {
+  .title {
+    font-size: 21px;
+    padding: 10px;
+    text-align: center;
+  }
+}
