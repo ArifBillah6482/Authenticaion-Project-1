@@ -20,7 +20,7 @@ function ProfileRoute() {
       window.localStorage.setItem("user", JSON.stringify(state));
       set_login(true);
     }
-  }, [state]);
+  }, [navigate, state]);
 
   return <div>{login && <Profile />}</div>;
 }
